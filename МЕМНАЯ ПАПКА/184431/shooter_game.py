@@ -85,13 +85,6 @@ class Ball(GameSprite):
         if self.rect.top < 0:
             self.rect.top = 0   
 
-class Picture(Area):
-  def __init__(self, filename, x=0, y=0, width=10, height=10):
-      Area.__init__(self, x=x, y=y, width=width, height=height, color=None)
-      self.image = pygame.image.load(filename)
-    
-  def draw(self):
-      background.blit(self.image, (self.rect.x, self.rect.y))
  
 ball = Picture('ball4.png', 300, 200, 1, 1)        
 
